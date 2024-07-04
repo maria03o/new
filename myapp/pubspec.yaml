@@ -1,0 +1,57 @@
+name: myapp
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+  cupertino_icons: ^1.0.2
+  carousel_slider: ^4.0.0
+  smooth_page_indicator: ^1.1.0
+  font_awesome_flutter: ^10.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/caption.jpg
+    - assets/food.jpg
+    #FOREST
+    - assets/0a108c7adaefe04a07f6e4edb012b5f0.jpg
+    - assets/8nl0w46p1qo41.jpg
+    - assets/c6e809c5122beccc2e62bd6ec7603dc7_1.jpg
+    #SAHRA
+    - assets/jj.jpeg
+    - assets/002.jpg
+    - assets/S_233273.jpg
+    #BHAR
+    - assets/chh1.jpg
+    - assets/chh2.jpg
+    - assets/chh3.jpg
+    #JBL
+    - assets/chhhh1.jpg
+    - assets/chhhh2.jpg
+    - assets/chhhh3.jpg
+
+    #ch
+    - assets/ch.jpg
+    - assets/chh.jpg
+    - assets/chhh.jpg
+    - assets/chhhh.jpg
+    #background
+    - assets/back.jpg
+    - assets/backk.jpg
+    - assets/backkk.jpg
+    - assets/backkkk.jpg
+  
