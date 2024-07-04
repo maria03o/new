@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ item.name }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .item-details {
+            margin-bottom: 20px;
+        }
+        .item-details h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .item-details p {
+            color: #666;
+        }
+        .item-images {
+            display: flex;
+            gap: 10px;
+        }
+        .item-images img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="item-details">
+        <h1>{{ item.name }}</h1>
+        <p>{{ item.description }}</p>
+        <p>Price: {{ item.price }}</p>
+        <p>Rating: {{ item.rating }}</p>
+    </div>
+
+    <div class="item-images">
+        {% for image in item.images.all %}
+            <img src="{{ image.image.url }}" alt="Image for {{ item.name }}">
+        {% endfor %}
+    </div>
+</body>
+</html>
